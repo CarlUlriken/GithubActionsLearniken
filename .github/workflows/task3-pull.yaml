@@ -1,0 +1,16 @@
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pull-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'ls before pull'
+        run: 'ls'
+      - name: 'Pull code'
+        uses: actions/checkout@v4
+      - name: 'ls after pull'
+        run: 'ls'
