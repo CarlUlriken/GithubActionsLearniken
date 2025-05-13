@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'ls before pull'
-        run: 'ls'
+        run: ls
       - name: 'Pull code'
-        uses: actions/checkout@v4
+        uses: 'actions/checkout@v4'
       - name: 'ls after pull'
-        run: 'ls'
+        run: ls
