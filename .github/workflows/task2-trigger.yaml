@@ -1,0 +1,12 @@
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Hello branch trigger'
+        run: 'echo Hello main'
