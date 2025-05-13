@@ -10,5 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uese: actions/setup-go@v5
+      - uses: actions/setup-go@v5
       - run: go version
